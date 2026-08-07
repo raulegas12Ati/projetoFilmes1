@@ -1,0 +1,25 @@
+{
+  "name": "projetofilmes1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulegas12Ati/projetoFilmes1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raulegas12Ati/projetoFilmes1/issues"
+  },
+  "homepage": "https://github.com/raulegas12Ati/projetoFilmes1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.23.2"
+  }
+}

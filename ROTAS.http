@@ -1,0 +1,29 @@
+GET http://localhost:3333/
+
+###
+
+POST http://localhost:3333/createdMovies
+Content-Type: application/json
+
+{
+    "titulo": "O espetacular Homem-Aranha 3",
+    "genero": "Ação/ficção",
+    "duracao": 175,
+    "classificacaoEtaria": "LIVRE"
+}
+
+###
+
+PUT http://localhost:3333/updateMovies/115
+Content-Type: application/json
+
+{
+    "titulo": "O espetacular Homem-Aranha 3",
+    "genero": "Ação/ficção",
+    "duracao": 305,
+    "classificacaoEtaria": "LIVRE"
+}
+
+###
+DELETE http://localhost:3333/deleteMovies/129
+
