@@ -25,5 +25,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3333/deleteMovies/129
+DELETE http://localhost:3333/deleteMovies/128
 
