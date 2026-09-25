@@ -1,4 +1,5 @@
 const parametros = new URLSearchParams(window.location.search)
+const API_URL = "http://localhost:3333"
 
 const id = parametros.get("id")
 
@@ -27,7 +28,7 @@ formulario.addEventListener("submit", async (event) => {
 
 
     const resposta = await fetch(
-        `http://localhost:3333/updateMovies/${id}`,
+        `${API_URL}/updateMovies/${id}`,
         {
             method: "PUT",
 

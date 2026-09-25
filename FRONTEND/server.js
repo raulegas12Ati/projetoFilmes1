@@ -1,7 +1,9 @@
+const API_URL = "http://localhost:3333"
+
 async function buscarFilmes() {
     console.log("Chegou em buscar filmes")
 
-    const resposta = await fetch("http://localhost:3333/all-movies")
+    const resposta = await fetch(`${API_URL}/all-movies`)
     const filmes = await resposta.json()
 
     const sectionFilmes = document.querySelector(".filmes")
@@ -46,7 +48,7 @@ async function deleteMovie(id) {
     console.log("Chegou em deleteMovie")
 
     const resposta = await fetch(
-        `http://localhost:3333/deleteMovies/${id}`,
+        `${API_URL}/deleteMovies/${id}`,
         {
             method: "DELETE"
         }

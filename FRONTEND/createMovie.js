@@ -1,4 +1,5 @@
 const formulario = document.getElementById("formularioCadastro")
+const API_URL = "http://localhost:3333"
 
 formulario.addEventListener("submit", async (event) => {
 
@@ -17,7 +18,7 @@ formulario.addEventListener("submit", async (event) => {
 
 
     const resposta = await fetch(
-        "http://localhost:3333/createMovies",
+        `${API_URL}/createMovies`,
         {
             method: "POST",
 
