@@ -22,8 +22,14 @@ async function buscarFilmes() {
 
 async function updateMovie(id){
     console.log("Chegou em updateMovie")
-    const resposta = await fetch(`http://localhost:3333/updateMovies/${id}`) // JSON
-    console.log("chegou aqui")
+    window.location.href = "updateMovie.html"
+
+    const titulo = document.getElementById("titulo").value
+    const genero = document.getElementById("genero").value
+    const duracao = document.getElementById("duracao").value
+    const classificacaoEtaria = document.getElementById("classificacaoEtaria").value
+    //const resposta = await fetch(`http://localhost:3333/updateMovies/${id}`) // JSON
+    //console.log("chegou aqui")
 }
 
 async function deleteMovie(id){
