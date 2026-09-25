@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3333"
+const API_URL = "https://projetofilmes1.onrender.com"
 
 async function buscarFilmes() {
     console.log("Chegou em buscar filmes")
@@ -55,7 +55,7 @@ async function deleteMovie(id) {
     )
 
     console.log("chegou aqui delete")
-    window.location.href = "filmes.html"
+    window.location.href = "index.html"
 }
 
 

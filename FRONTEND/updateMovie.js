@@ -1,5 +1,5 @@
 const parametros = new URLSearchParams(window.location.search)
-const API_URL = "http://localhost:3333"
+const API_URL = "https://projetofilmes1.onrender.com"
 
 const id = parametros.get("id")
 
@@ -54,5 +54,5 @@ formulario.addEventListener("submit", async (event) => {
 
     console.log("Filme atualizado com sucesso!")
 
-    window.location.href = "filmes.html"
+    window.location.href = "index.html"
 })

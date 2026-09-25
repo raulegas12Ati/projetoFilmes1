@@ -1,5 +1,5 @@
 const formulario = document.getElementById("formularioCadastro")
-const API_URL = "http://localhost:3333"
+const API_URL = "https://projetofilmes1.onrender.com"
 
 formulario.addEventListener("submit", async (event) => {
 
@@ -44,5 +44,5 @@ formulario.addEventListener("submit", async (event) => {
 
     console.log("Filme cadastrado com sucesso!")
 
-    window.location.href = "filmes.html"
+    window.location.href = "index.html"
 })
