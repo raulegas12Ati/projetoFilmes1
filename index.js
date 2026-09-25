@@ -33,7 +33,8 @@ app.get("/all-movies", (request, response) => {
 })
 
 //CREATED
-app.post("/createdMovies", (request, response) => {
+app.post("/createMovies", (request, response) => {
+    console.log("Chegou em createMovies")
     const { genero, titulo, duracao, classificacaoEtaria } = request.body
     console.log(genero, titulo, duracao, classificacaoEtaria)
 
@@ -56,6 +57,7 @@ app.post("/createdMovies", (request, response) => {
 
 //UPDATE
 app.put("/updateMovies/:id", (request, response) => {
+    console.log("Chegou em updateMovies")
     const { id } = request.params
     const { genero, titulo, duracao, classificacaoEtaria } = request.body
 
@@ -80,6 +82,7 @@ app.put("/updateMovies/:id", (request, response) => {
 
 //DELETE
 app.delete("/deleteMovies/:id", (request, response) => {
+    console.log("Chegou em deleteMovies")
     const {id} = request.params
 
     const deleteCommand = `
