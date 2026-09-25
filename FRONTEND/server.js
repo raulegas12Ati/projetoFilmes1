@@ -13,9 +13,23 @@ async function buscarFilmes() {
                         <p><strong>Gênero:</strong> ${filme.genero}</p>
                         <p><strong>Duração:</strong> ${filme.duracao} minutos</p>
                         <p><strong>Classificação indicativa:</strong> ${filme.classificacaoEtaria > 0 ? filme.classificacaoEtaria + ' anos' : 'Livre'}</p>
+                        <button onclick="updateMovie(${filme.id})">Atualizar</button>
+                        <button onclick="deleteMovie(${filme.id})">Excluir</button>
                     </div>
                 `
     })
+}
+
+async function updateMovie(id){
+    console.log("Chegou em updateMovie")
+    const resposta = await fetch(`http://localhost:3333/updateMovies/${id}`) // JSON
+    console.log("chegou aqui")
+}
+
+async function deleteMovie(id){
+    console.log("Chegou em deleteMovie")
+    const resposta = await fetch(`http://localhost:3333/deleteMovies/${id}`) // JSON
+    console.log("chegou aqui")
 }
 
 buscarFilmes()
