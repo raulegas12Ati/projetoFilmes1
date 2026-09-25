@@ -1,8 +1,10 @@
 import express from "express"
 import mysql2 from "mysql2"
+import cors from "cors"
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 const port = 3333
 
@@ -14,7 +16,8 @@ const port = 3333
 //D = OK
 
 //READ
-app.get("/", (request, response) => {
+app.get("/all-movies", (request, response) => {
+    console.log("Chegou na rota all-movies")
     const selectCommand = `
         SELECT * FROM filmes_RaulEgas
     `
@@ -25,7 +28,7 @@ app.get("/", (request, response) => {
             return
         }
 
-        console.log(data)
+        response.status(200).json(data)
     })
 })
 

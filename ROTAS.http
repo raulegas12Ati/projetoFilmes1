@@ -6,24 +6,24 @@ POST http://localhost:3333/createdMovies
 Content-Type: application/json
 
 {
-    "titulo": "O espetacular Homem-Aranha 3",
-    "genero": "Ação/ficção",
+    "titulo": "O som da liberdade",
+    "genero": "Documentario",
     "duracao": 175,
     "classificacaoEtaria": "LIVRE"
 }
 
 ###
 
-PUT http://localhost:3333/updateMovies/115
+PUT http://localhost:3333/updateMovies/142
 Content-Type: application/json
 
 {
-    "titulo": "O espetacular Homem-Aranha 3",
-    "genero": "Ação/ficção",
-    "duracao": 305,
+    "titulo": "O som da liberdade",
+    "genero": "Documentario",
+    "duracao": 205,
     "classificacaoEtaria": "LIVRE"
 }
 
 ###
-DELETE http://localhost:3333/deleteMovies/128
+DELETE http://localhost:3333/deleteMovies/142
 
